@@ -85,21 +85,32 @@ Run these commands to verify the deployment end-to-end:
 ```bash
 # 1. Check generated password
 terraform output postgres_password
+```
+
 ![Terraform Output](screenshots/terraform-output.png)
 
-
+```bash
 # 2. Confirm namespace and secret
 kubectl get ns patient-monitoring
 kubectl get secret postgres-secrets -n patient-monitoring
+```
 
+![Terraform Output](screenshots/kubectl.png)
+
+```bash
 # 3. Verify StorageClass and CSI driver
 kubectl get storageclass
 kubectl get csidrivers
+```
 
-# 4. Check Helm release, pods, and PVC
-helm list -n patient-monitoring
+![Terraform Output](screenshots/storageclass-csi.png)
+
+```bash
+# 4. Check pods, and PVC
 kubectl get pods,pvc -n patient-monitoring
 ```
+
+![Terraform Output](screenshots/pods-pvc.png)
 
 
 
