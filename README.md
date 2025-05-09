@@ -90,10 +90,10 @@ This implementation uses:
 ---
 ## Deployment Process
 
-This section guides you through publishing your local code to GitHub and then deploying the infrastructure. Each step includes explanation for newcomers.
+This section guides you through publishing your local code to GitHub and then deploying the infrastructure.
 
 1. **Initialize and Commit Locally**  
-   If you have not already, start version control and save your work:  
+  
    ```bash
    # Initialize a new Git repository in your project folder
    git init
@@ -103,16 +103,13 @@ This section guides you through publishing your local code to GitHub and then de
    
    # Create your first commit with a meaningful message
    git commit -m "Initial commit: add Terraform IaC, Helm configs, and docs"
-   ```  
-   - `git init` creates a `.git` folder to track your changes.  
-   - `git add .` stages all current files for commit.  
-   - `git commit` saves a snapshot of your project with a message.
+   ``` 
 
 2. **Create the GitHub Repository**  
    A remote repository is where your code lives online for collaboration and backup:  
    1. Go to [GitHub.com](https://github.com/) and sign in.  
    2. Click the **+** icon (top-right) → **New repository**.  
-   3. Enter **Repository name**: `nhs-assessment-k8s`.  
+   3. Enter **Repository name**: `abc`.  
    4. Leave all **Initialize** boxes unchecked (no README or .gitignore).  
    5. Click **Create repository**.  
    - You will see instructions for pushing existing code.
@@ -121,7 +118,7 @@ This section guides you through publishing your local code to GitHub and then de
    Connect your local repo to GitHub and upload your commit:  
    ```bash
    # Copy the SSH (or HTTPS) URL from GitHub, then:
-   git remote add origin git@github.com:YOUR-USERNAME/nhs-assessment-k8s.git
+   git remote add origin git@github.com:YOUR-USERNAME/<abc>.git
    
    # Push your local master (or main) branch to GitHub
    git push -u origin master
@@ -134,7 +131,7 @@ This section guides you through publishing your local code to GitHub and then de
    - Ensure you see all folders and files, including `.tf` files, `README.md`, and your `screenshots/` directory.
 
 5. **Deploy to AWS**  
-   Now that your code is versioned online, let's create the actual AWS resources:  
+  
    ```bash
    terraform init        # Downloads provider plugins and modules
    terraform plan        # Shows what will be created or changed
