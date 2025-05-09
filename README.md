@@ -85,7 +85,8 @@ Run these commands to verify the deployment end-to-end:
 ```bash
 # 1. Check generated password
 terraform output postgres_password
-![Descriptive Alt Text](screenshots/Screenshot 2025-05-08 225724.png)
+![Terraform Output](screenshots/terraform-output.png)
+
 
 # 2. Confirm namespace and secret
 kubectl get ns patient-monitoring
