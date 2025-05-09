@@ -258,11 +258,14 @@ kubectl get pods,pvc -n patient-monitoring
  ![VPC Overview](screenshots/vpc-output1.png)
 
    ![VPC Overview](screenshots/vpc-output2.png)
+   
 2. **EKS Cluster Overview**  
    ![EKS Cluster](screenshots/eks-cluster-overview.png)
-3. **Control-Plane Logging**  
+   
+4. **Control-Plane Logging**  
    ![Control-Plane Logging](screenshots/control-plane-logging.png)
-4. **PersistentVolume Details**  
+   
+6. **PersistentVolume Details**  
    ![Pods & PVC](screenshots/eks-persistent-storage.png)
 
 ---
